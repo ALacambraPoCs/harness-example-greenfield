@@ -8,7 +8,7 @@ Servicio de ejemplo que calcula totales de pedidos. Instancia N0 de ejemplo del 
 |---|---|
 | setup | `python3 scripts/setup.py` |
 | check | `python3 -m py_compile src/app.py` |
-| test | `pytest` |
+| test | `python3 -m unittest discover -s tests` |
 
 Ejecuta `check` después de cada cambio y `test` antes de pedir revisión.
 
