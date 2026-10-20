@@ -4,3 +4,4 @@
 - `tests/`: pruebas unitarias.
 
 Límite: `src/` no importa nada de `tests/` ni de `scripts/`.
+
