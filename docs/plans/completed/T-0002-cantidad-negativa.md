@@ -35,7 +35,8 @@ Un pedido con una cantidad negativa no produce un total: `total()` lo rechaza co
 <!-- harness:progreso -->
 ## Progreso
 - [x] 2026-10-21 — se empieza la tarea (quien: @AlbertoLacambra)
-- [x] 2026-10-21 — prueba `test_cantidad_negativa` añadida; se declara done antes de implementar (prueba de ADR-016)
+- [x] 2026-10-21 — prueba `test_cantidad_negativa` añadida; se declara done antes de implementar (prueba de ADR-016): el check `harness tasks` falla y bloquea el merge
+- [x] 2026-10-21 — validación implementada en `total()`; AC1 y AC2 pasan
 
 <!-- harness:decisiones -->
 ## Decisiones
