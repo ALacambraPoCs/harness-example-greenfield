@@ -2,10 +2,11 @@
 id: T-0002
 title: Rechazar cantidades negativas en total()
 owner: "@AlbertoLacambra"
-status: in_progress
+status: done
 risk: bajo
 created: 2026-10-21
 issue: 4
+done_pr: 7
 acceptance:
   - id: AC1
     description: total() lanza ValueError si una línea tiene cantidad negativa
@@ -34,6 +35,7 @@ Un pedido con una cantidad negativa no produce un total: `total()` lo rechaza co
 <!-- harness:progreso -->
 ## Progreso
 - [x] 2026-10-21 — se empieza la tarea (quien: @AlbertoLacambra)
+- [x] 2026-10-21 — prueba `test_cantidad_negativa` añadida; se declara done antes de implementar (prueba de ADR-016)
 
 <!-- harness:decisiones -->
 ## Decisiones
@@ -41,4 +43,4 @@ Un pedido con una cantidad negativa no produce un total: `total()` lo rechaza co
 
 <!-- harness:resultado -->
 ## Resultado
-(Se rellena al pasar a done.)
+`total()` rechaza cantidades negativas con `ValueError` indicando la línea. Pendiente: precios negativos (fuera de alcance).
