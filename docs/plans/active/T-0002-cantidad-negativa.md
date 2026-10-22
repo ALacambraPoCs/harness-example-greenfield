@@ -2,7 +2,7 @@
 id: T-0002
 title: Rechazar cantidades negativas en total()
 owner: "@AlbertoLacambra"
-status: ready
+status: in_progress
 risk: bajo
 created: 2026-10-21
 issue: 4
@@ -33,7 +33,7 @@ Un pedido con una cantidad negativa no produce un total: `total()` lo rechaza co
 
 <!-- harness:progreso -->
 ## Progreso
-- [ ] (pendiente)
+- [x] 2026-10-21 — se empieza la tarea (quien: @AlbertoLacambra)
 
 <!-- harness:decisiones -->
 ## Decisiones
