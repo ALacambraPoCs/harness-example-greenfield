@@ -3,6 +3,7 @@ id: T-0003
 title: Adoptar el estándar 0.4.0 y los componentes del catálogo
 owner: "@AlbertoLacambra"
 status: done
+done_pr: 11
 risk: medio
 created: 2026-10-22
 acceptance:
