@@ -2,7 +2,8 @@
 id: T-0003
 title: Adoptar el estándar 0.4.0 y los componentes del catálogo
 owner: "@AlbertoLacambra"
-status: in_progress
+status: done
+done_pr: 11
 risk: medio
 created: 2026-10-22
 acceptance:
@@ -34,6 +35,7 @@ El repositorio declara el estándar 0.4.0 y usa los componentes del catálogo (h
 <!-- harness:progreso -->
 ## Progreso
 - [x] 2026-10-22 — componentes instalados con `harness components add` (quien: Claude a nombre de @AlbertoLacambra)
+- [x] 2026-10-23 — cerrada en el PR de cierre (ver `done_pr`)
 
 <!-- harness:decisiones -->
 ## Decisiones
@@ -41,4 +43,6 @@ El repositorio declara el estándar 0.4.0 y usa los componentes del catálogo (h
 
 <!-- harness:resultado -->
 ## Resultado
-(Se rellena al pasar a done.)
+Logrado: el repositorio declara el estándar 0.4.0 en N1 y usa los componentes del catálogo (hook verificar-al-terminar, subagente verificador, skill cerrar-tarea) con la configuración deny-first de Claude Code. `harness check --strict` pasa sin errores ni avisos (58 reglas ejecutadas, 17 omitidas) y el índice está al día.
+
+Pendiente: probar los componentes en una sesión real de Claude Code (plan F3.6), fuera del alcance de este PR.
