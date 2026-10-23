@@ -34,7 +34,10 @@ Un pedido con un precio unitario negativo no produce un total: `total()` lo rech
 
 <!-- harness:progreso -->
 ## Progreso
-- [ ] (pendiente; la hará Claude Code en la F3.6)
+- [x] Añadir la prueba `test_precio_negativo` (tests/test_app.py)
+- [x] Validar precios negativos en `total()` con `ValueError` que indica la línea (src/app.py)
+- [x] `check` pasa: py_compile + `unittest discover -s tests` (3 pruebas OK)
+- [ ] Verificar con `verificador` y cerrar con `cerrar-tarea` (en el PR)
 
 <!-- harness:decisiones -->
 ## Decisiones
