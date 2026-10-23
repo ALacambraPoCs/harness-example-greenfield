@@ -2,7 +2,8 @@
 id: T-0004
 title: Rechazar precios negativos en total()
 owner: "@AlbertoLacambra"
-status: in_progress
+status: done
+done_pr: 10
 risk: bajo
 created: 2026-10-22
 issue: 8
@@ -34,7 +35,11 @@ Un pedido con un precio unitario negativo no produce un total: `total()` lo rech
 
 <!-- harness:progreso -->
 ## Progreso
-- [ ] (pendiente; la hará Claude Code en la F3.6)
+- [x] Añadir la prueba `test_precio_negativo` (tests/test_app.py)
+- [x] Validar precios negativos en `total()` con `ValueError` que indica la línea (src/app.py)
+- [x] `check` pasa: py_compile + `unittest discover -s tests` (3 pruebas OK)
+- [x] Verificar con `verificador` y cerrar con `cerrar-tarea` (en el PR)
+- 2026-10-23 — cerrada en el PR #10
 
 <!-- harness:decisiones -->
 ## Decisiones
@@ -42,4 +47,6 @@ Un pedido con un precio unitario negativo no produce un total: `total()` lo rech
 
 <!-- harness:resultado -->
 ## Resultado
-(Se rellena al pasar a done.)
+Logrado: `total()` rechaza precios negativos con `ValueError("Precio negativo en la línea N: p")`, igual que las cantidades (T-0002). Añadida `test_precio_negativo`. AC1 y AC2 pasan en local (verificador, código 0).
+
+Pendiente: nada dentro del alcance. Los descuentos quedan fuera (se modelarán aparte).

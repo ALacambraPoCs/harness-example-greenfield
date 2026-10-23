@@ -7,4 +7,4 @@
 | T-0001 | Adoptar el nivel N1 del estándar 0.2.0 | done | medio | @AlbertoLacambra | — | — | [T-0001-adoptar-n1.md](completed/T-0001-adoptar-n1.md) |
 | T-0002 | Rechazar cantidades negativas en total() | done | bajo | @AlbertoLacambra | — | #4 | [T-0002-cantidad-negativa.md](completed/T-0002-cantidad-negativa.md) |
 | T-0003 | Adoptar el estándar 0.4.0 y los componentes del catálogo | in_progress | medio | @AlbertoLacambra | — | — | [T-0003-adoptar-0-4.md](active/T-0003-adoptar-0-4.md) |
-| T-0004 | Rechazar precios negativos en total() | in_progress | bajo | @AlbertoLacambra | — | #8 | [T-0004-precio-negativo.md](active/T-0004-precio-negativo.md) |
+| T-0004 | Rechazar precios negativos en total() | done | bajo | @AlbertoLacambra | — | #8 | [T-0004-precio-negativo.md](completed/T-0004-precio-negativo.md) |
