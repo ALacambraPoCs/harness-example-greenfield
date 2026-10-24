@@ -34,6 +34,8 @@ acceptance:
 
 <!-- harness:progreso -->
 ## Progreso
+- 2026-10-24 — Añadida `test_descuento` en `tests/test_app.py` (casos válidos 0/10/100, redondeo y −1/101 → `ValueError`). Sin implementar: falla con `TypeError` porque `total()` aún no acepta `descuento`. AC1 y AC2 pendientes.
+- 2026-10-24 — Implementado `descuento` en `total()` (`src/app.py`): valida 0–100 con `ValueError`, aplica el porcentaje sobre el subtotal y redondea a 2 decimales. Local: `check` y `test` en verde (4 pruebas). AC1 y AC2 pasan localmente; la tarea sigue `in_progress` hasta el PR de cierre.
 
 <!-- harness:decisiones -->
 ## Decisiones
