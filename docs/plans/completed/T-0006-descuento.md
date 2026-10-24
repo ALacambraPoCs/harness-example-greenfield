@@ -2,7 +2,8 @@
 id: T-0006
 title: Descuento porcentual en total()
 owner: "@AlbertoLacambra"
-status: in_progress
+status: done
+done_pr: 14
 risk: bajo
 created: 2026-10-24
 issue: 12
@@ -34,9 +35,14 @@ acceptance:
 
 <!-- harness:progreso -->
 ## Progreso
+- 2026-10-24 — Añadida `test_descuento` en `tests/test_app.py` (casos válidos 0/10/100, redondeo y −1/101 → `ValueError`). Sin implementar: falla con `TypeError` porque `total()` aún no acepta `descuento`. AC1 y AC2 pendientes.
+- 2026-10-24 — Implementado `descuento` en `total()` (`src/app.py`): valida 0–100 con `ValueError`, aplica el porcentaje sobre el subtotal y redondea a 2 decimales. Local: `check` y `test` en verde (4 pruebas). AC1 y AC2 pasan localmente; la tarea sigue `in_progress` hasta el PR de cierre.
+- 2026-10-24 — cerrada en el PR #14 — @AlbertoLacambra
 
 <!-- harness:decisiones -->
 ## Decisiones
 - 2026-10-24 — AC1 nombra la prueba exacta antes de implementar — @AlbertoLacambra
 
 <!-- harness:resultado -->
+## Resultado
+total(lines, descuento=0) aplica el descuento porcentual 0–100 sobre el subtotal, redondea a 2 decimales y lanza ValueError fuera de rango. Pendiente: nada dentro de alcance; descuentos por línea e impuestos quedan fuera de alcance.
