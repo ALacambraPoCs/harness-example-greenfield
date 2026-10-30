@@ -1,7 +1,7 @@
 # harness-example-greenfield
 
 <!-- harness:resumen -->
-Servicio de ejemplo que calcula totales de pedidos. Instancia N1 de ejemplo del Estándar de Harness 0.4.0 (repositorio de pruebas de extremo a extremo).
+Servicio de ejemplo que calcula totales de pedidos. Instancia N1 de ejemplo del Estándar de Harness 0.9.1 (repositorio de pruebas de extremo a extremo).
 
 <!-- harness:comandos -->
 ## Comandos
@@ -27,6 +27,8 @@ Ejecuta `check` después de cada cambio y `test` antes de pedir revisión.
 - Cada cambio no trivial tiene un archivo de tarea en [docs/plans/active](docs/plans/active/) y va en su propia rama y PR. El índice está en [docs/plans/INDEX.md](docs/plans/INDEX.md).
 - Actualiza la sección de progreso de la tarea en cada sesión y rellena la plantilla del PR (tarea, riesgo, evidencia, sensible).
 - El paso a `done` va en el PR que completa la tarea; el check `harness tasks` vuelve a ejecutar sus criterios de aceptación y bloquea el merge si alguno falla.
+- **Para y pide decisión a la persona** si: un comando del que depende el siguiente paso falla; un permiso bloquea algo necesario (no busques rodeos como `gh api` o `sh -c`); un criterio de aceptación parece incorrecto; el verificador o el mismo check de CI fallan dos veces seguidas; o se detecta un secreto. Si el cambio toca workflows, CODEOWNERS o `.harness/`, avisa de que es riesgo alto y necesita la puerta de aprobación.
+- El sitio de `site/` se genera con `python3 scripts/generar_sitio.py` y se despliega solo al fusionar; no despliegues ni reviertas tú (runbook en [docs/runbooks](docs/runbooks/rollback-pages.md)).
 
 <!-- harness:mapa -->
 ## Dónde está el detalle

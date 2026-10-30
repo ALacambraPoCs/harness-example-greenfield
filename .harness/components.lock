@@ -3,46 +3,96 @@
   "componentes": {
     "cerrar-tarea": {
       "tipo": "skill",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "estado": "experimental",
       "origen": {
-        "estandar": "0.5.0",
-        "cli": "0.5.0rc1"
+        "estandar": "0.9.1",
+        "cli": "0.9.1rc1"
       },
       "archivos": [
         {
           "destino": ".claude/skills/cerrar-tarea/SKILL.md",
-          "sha256": "960db24803330d5c01443fea8521e60aeba56bf899f4bb58e5cd185dda9cf525"
+          "sha256": "77d9f90e78ab0152660902ae350cd05496ab2ab42f25ef83be51a20f57df163b"
+        }
+      ]
+    },
+    "despliegue-pages": {
+      "tipo": "workflow",
+      "version": "0.2.0",
+      "estado": "experimental",
+      "origen": {
+        "estandar": "0.9.1",
+        "cli": "0.9.1rc1"
+      },
+      "archivos": [
+        {
+          "destino": ".github/workflows/despliegue-pages.yml",
+          "sha256": "b067fc81de33d1609d225dde9a0c0b28f2a1b026a56e9213879f459c02f5bb6f"
+        },
+        {
+          "destino": ".harness/despliegue/despliegue.py",
+          "sha256": "2530108edee2a021e92dd9f0bdc0cb3a43f2c01afa3130fa22d335fac42d6c10"
+        }
+      ]
+    },
+    "revisor-informativo": {
+      "tipo": "workflow",
+      "version": "0.1.0",
+      "estado": "experimental",
+      "origen": {
+        "estandar": "0.9.1",
+        "cli": "0.9.1rc1"
+      },
+      "archivos": [
+        {
+          "destino": ".github/workflows/revisor-informativo.yml",
+          "sha256": "9b9e9bc6bf083dbc6a425c7d99e5fdf757aac3a96bd4ac94599cd891af34cf74"
+        },
+        {
+          "destino": ".harness/revisor/simulador_hostil.py",
+          "sha256": "d4e50d1723ae432672479da34f287decf7a6913a13bf61679664ffa456619e8e"
+        },
+        {
+          "destino": ".harness/revisor/publicar.py",
+          "sha256": "d19dcea13aa0b74f3e01301261de9cb27f39e8ab59915ac62fbae82857963e48"
+        },
+        {
+          "destino": ".harness/revisor/prompt.md",
+          "sha256": "3faf7ea218153421506c93c19f498852d7366d2bcb4b4ee15da87c8305b980f8"
+        },
+        {
+          "destino": ".harness/revisor/settings.json",
+          "sha256": "e9dad27f7af5a394fb2d4e657e4321f7371d9cce6a0715dffbf2e164e0dd16e3"
         }
       ]
     },
     "verificador": {
       "tipo": "subagente",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "estado": "experimental",
       "origen": {
-        "estandar": "0.5.0",
-        "cli": "0.5.0rc1"
+        "estandar": "0.9.1",
+        "cli": "0.9.1rc1"
       },
       "archivos": [
         {
           "destino": ".claude/agents/verificador.md",
-          "sha256": "93a935d8d17bacfbed4193627827ae69d7e129c14b5c93ff49f52bbf334ea156"
+          "sha256": "06b0b6500f1c09e0f85a431ae0fa6fac51985a192460bbdac5517c3e18dfba00"
         }
       ]
     },
     "verificar-al-terminar": {
       "tipo": "hook",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "estado": "experimental",
       "origen": {
-        "estandar": "0.5.0",
-        "cli": "0.5.0rc1"
+        "estandar": "0.9.1",
+        "cli": "0.9.1rc1"
       },
       "archivos": [
         {
           "destino": ".claude/hooks/verificar_al_terminar.py",
-          "sha256": "cc3b0802302a873662a195be016dc99ea1641411098b5a5afd27c68d8938008a"
+          "sha256": "a13d0089897b36f3a73023a6d1ea796a1a6da680811581f5464af0102d3e89e4"
         }
       ],
       "claude_settings": {

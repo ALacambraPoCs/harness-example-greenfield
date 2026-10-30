@@ -1,0 +1,21 @@
+# Autoridad comprobable (HS-CI-006): comprueba que el ruleset y los environments reales cumplen el nivel.
+# Programado y en cada push a la rama por defecto; NO es un check de PR. Si falla, abre o comenta una issue.
+name: harness-platform
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  platform:
+    uses: ALacambraPoCs/harness-standard-lab/.github/workflows/harness-platform.yml@cli-v0.9.1-rc.1
+    with:
+      standard-repository: ALacambraPoCs/harness-standard-lab
+      cli-ref: cli-v0.9.1-rc.1
+    permissions:
+      contents: read
+      actions: read
+      issues: write
