@@ -14,6 +14,7 @@ from app import total  # noqa: E402
 
 LINEAS = [(2, 1.5), (1, 3.0)]
 DESCUENTO = 10
+IVA = 21
 
 
 def generar() -> str:
@@ -27,14 +28,14 @@ def generar() -> str:
 </head>
 <body>
   <h1>harness-example-greenfield</h1>
-  <p>Ejemplo de <code>total()</code> con descuento del {DESCUENTO} %:</p>
+  <p>Ejemplo de <code>total()</code> con descuento del {DESCUENTO} % e IVA del {IVA} %:</p>
   <table>
     <thead><tr><th>Cantidad</th><th>Precio</th></tr></thead>
     <tbody>
 {filas}
     </tbody>
   </table>
-  <p>Total: <strong id="total">{html.escape(f"{total(LINEAS, DESCUENTO):.2f}")}</strong></p>
+  <p>Total con IVA: <strong id="total">{html.escape(f"{total(LINEAS, DESCUENTO, IVA):.2f}")}</strong></p>
   <p>Versión desplegada: <code id="version">(cargando)</code></p>
   <script>
     fetch("version.txt", {{cache: "no-store"}}).then(r => r.text())

@@ -31,5 +31,15 @@ class TotalTest(unittest.TestCase):
             total(lineas, 101)
 
 
+    def test_iva(self):
+        lineas = [(2, 1.5), (1, 3.0)]
+        self.assertEqual(total(lineas, iva=0), 6.0)
+        self.assertEqual(total(lineas, iva=21), 7.26)
+        self.assertEqual(total(lineas, descuento=10, iva=21), 6.53)
+        self.assertEqual(total([(1, 3.33)], iva=10), 3.66)
+        with self.assertRaises(ValueError):
+            total(lineas, iva=-1)
+
+
 if __name__ == "__main__":
     unittest.main()

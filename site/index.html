@@ -7,7 +7,7 @@
 </head>
 <body>
   <h1>harness-example-greenfield</h1>
-  <p>Ejemplo de <code>total()</code> con descuento del 10 %:</p>
+  <p>Ejemplo de <code>total()</code> con descuento del 10 % e IVA del 21 %:</p>
   <table>
     <thead><tr><th>Cantidad</th><th>Precio</th></tr></thead>
     <tbody>
@@ -15,7 +15,7 @@
       <tr><td>1</td><td>3.00</td></tr>
     </tbody>
   </table>
-  <p>Total: <strong id="total">5.40</strong></p>
+  <p>Total con IVA: <strong id="total">6.53</strong></p>
   <p>Versión desplegada: <code id="version">(cargando)</code></p>
   <script>
     fetch("version.txt", {cache: "no-store"}).then(r => r.text())
