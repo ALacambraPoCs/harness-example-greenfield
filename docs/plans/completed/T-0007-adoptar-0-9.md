@@ -2,7 +2,8 @@
 id: T-0007
 title: Adoptar el estándar 0.9.1 con despliegue en Pages y revisor informativo
 owner: "@AlbertoLacambra"
-status: in_progress
+status: done
+done_pr: 17
 risk: alto
 created: 2026-10-30
 acceptance:
@@ -41,6 +42,7 @@ El repositorio declara el estándar 0.9.1 (F5.2–F5.7): clase de riesgo calcula
 <!-- harness:progreso -->
 ## Progreso
 - 2026-10-30 — workflows a `cli-v0.9.1-rc.1`, `harness-platform.yml`, sandbox en `settings.json`, componentes sincronizados y `despliegue-pages` 0.2.0 y `revisor-informativo` 0.1.0 instalados — Claude a nombre de @AlbertoLacambra
+- 2026-11-04 — cerrada en el PR #17 — @AlbertoLacambra
 
 <!-- harness:decisiones -->
 ## Decisiones
@@ -49,3 +51,4 @@ El repositorio declara el estándar 0.9.1 (F5.2–F5.7): clase de riesgo calcula
 
 <!-- harness:resultado -->
 ## Resultado
+Estándar 0.9.1 adoptado en N1: check --strict sin errores ni avisos, índice y sitio al día, Pages sirve un SHA verificado tras fusionar el PR de adopción (#16). Pendiente: harness platform check tras fusionar y la aprobación de la puerta de riesgo alto.
