@@ -11,4 +11,4 @@
 | T-0005 | Adoptar el estándar 0.5.0 y los componentes ajustados | done | medio | @AlbertoLacambra | — | — | [T-0005-adoptar-0-5.md](completed/T-0005-adoptar-0-5.md) |
 | T-0006 | Descuento porcentual en total() | done | bajo | @AlbertoLacambra | — | #12 | [T-0006-descuento.md](completed/T-0006-descuento.md) |
 | T-0007 | Adoptar el estándar 0.9.1 con despliegue en Pages y revisor informativo | done | alto | @AlbertoLacambra | — | — | [T-0007-adoptar-0-9.md](completed/T-0007-adoptar-0-9.md) |
-| T-0008 | IVA opcional en total() y en el sitio | ready | bajo | @AlbertoLacambra | — | — | [T-0008-iva.md](active/T-0008-iva.md) |
+| T-0008 | IVA opcional en total() y en el sitio | in_progress | bajo | @AlbertoLacambra | — | — | [T-0008-iva.md](active/T-0008-iva.md) |
