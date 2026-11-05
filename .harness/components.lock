@@ -18,16 +18,16 @@
     },
     "despliegue-pages": {
       "tipo": "workflow",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "estado": "experimental",
       "origen": {
         "estandar": "0.9.1",
-        "cli": "0.9.1rc1"
+        "cli": "0.9.2rc1"
       },
       "archivos": [
         {
           "destino": ".github/workflows/despliegue-pages.yml",
-          "sha256": "b067fc81de33d1609d225dde9a0c0b28f2a1b026a56e9213879f459c02f5bb6f"
+          "sha256": "e47f497419b23f764bda21fc6fd4a8c6de5f6f3cae3810d2f0f45c87d5150afe"
         },
         {
           "destino": ".harness/despliegue/despliegue.py",
