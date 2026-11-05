@@ -2,7 +2,7 @@
 runbook: rollback-pages
 servicio: https://alacambrapocs.github.io/harness-example-greenfield/ (workflow despliegue-pages)
 propietario: "@AlbertoLacambra"
-revisado: pendiente (primer ensayo en la F5.7)
+revisado: "2026-11-05 (ensayo de rollback correcto, issue #23)"
 ---
 
 # Rollback del sitio en GitHub Pages
