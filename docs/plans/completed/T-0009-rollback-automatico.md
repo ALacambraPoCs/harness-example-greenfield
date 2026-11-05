@@ -2,7 +2,8 @@
 id: T-0009
 title: El rollback automático del despliegue se ejecuta tras un fallo de verificación
 owner: "@AlbertoLacambra"
-status: in_progress
+status: done
+done_pr: 24
 risk: alto
 created: 2026-11-05
 acceptance:
@@ -37,6 +38,7 @@ Que un fallo de `verificar` lleve de verdad a `revertir` y `verificar reversión
 <!-- harness:progreso -->
 ## Progreso
 - 2026-11-05 — `despliegue-pages` 0.2.0 → 0.2.1 y workflows a `cli-v0.9.2-rc.1` — Claude a nombre de @AlbertoLacambra
+- 2026-11-05 — cerrada en el PR #24 — @AlbertoLacambra
 
 <!-- harness:decisiones -->
 ## Decisiones
@@ -44,3 +46,4 @@ Que un fallo de `verificar` lleve de verdad a `revertir` y `verificar reversión
 
 <!-- harness:resultado -->
 ## Resultado
+Objetivo cumplido: un fallo de verificar ahora lleva a revertir y verificar reversión (condiciones always() en despliegue-pages 0.2.1, cli-v0.9.2-rc.1). Ensayo de rollback correcto en la issue #23 (rollback: success), con el sitio sirviendo de nuevo HEAD; runbook rollback-pages con revisado 2026-11-05. Pendiente: nada en esta tarea; el comentario de cierre de la issue #23 contiene un marcador sin rellenar (<enlace al run #8>).
