@@ -12,4 +12,4 @@
 | T-0006 | Descuento porcentual en total() | done | bajo | @AlbertoLacambra | — | #12 | [T-0006-descuento.md](completed/T-0006-descuento.md) |
 | T-0007 | Adoptar el estándar 0.9.1 con despliegue en Pages y revisor informativo | done | alto | @AlbertoLacambra | — | — | [T-0007-adoptar-0-9.md](completed/T-0007-adoptar-0-9.md) |
 | T-0008 | IVA opcional en total() y en el sitio | done | bajo | @AlbertoLacambra | — | — | [T-0008-iva.md](completed/T-0008-iva.md) |
-| T-0009 | El rollback automático del despliegue se ejecuta tras un fallo de verificación | in_progress | alto | @AlbertoLacambra | — | — | [T-0009-rollback-automatico.md](active/T-0009-rollback-automatico.md) |
+| T-0009 | El rollback automático del despliegue se ejecuta tras un fallo de verificación | done | alto | @AlbertoLacambra | — | — | [T-0009-rollback-automatico.md](completed/T-0009-rollback-automatico.md) |
