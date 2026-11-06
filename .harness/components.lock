@@ -3,31 +3,31 @@
   "componentes": {
     "cerrar-tarea": {
       "tipo": "skill",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "estado": "experimental",
       "origen": {
-        "estandar": "0.9.1",
-        "cli": "0.9.1rc1"
+        "estandar": "0.10.0",
+        "cli": "0.10.0rc1"
       },
       "archivos": [
         {
           "destino": ".claude/skills/cerrar-tarea/SKILL.md",
-          "sha256": "77d9f90e78ab0152660902ae350cd05496ab2ab42f25ef83be51a20f57df163b"
+          "sha256": "443a5338d99157f8b0bc716309ddb69d82da9601775658b0ee852b2c55bdfc25"
         }
       ]
     },
     "despliegue-pages": {
       "tipo": "workflow",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "estado": "experimental",
       "origen": {
-        "estandar": "0.9.1",
-        "cli": "0.9.2rc1"
+        "estandar": "0.10.0",
+        "cli": "0.10.0rc1"
       },
       "archivos": [
         {
           "destino": ".github/workflows/despliegue-pages.yml",
-          "sha256": "e47f497419b23f764bda21fc6fd4a8c6de5f6f3cae3810d2f0f45c87d5150afe"
+          "sha256": "991fd41e2e064eb37c42db0914be6f8a84235dacec5d36e266ed3c87e1ffd098"
         },
         {
           "destino": ".harness/despliegue/despliegue.py",
@@ -83,16 +83,16 @@
     },
     "verificar-al-terminar": {
       "tipo": "hook",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "estado": "experimental",
       "origen": {
-        "estandar": "0.9.1",
-        "cli": "0.9.1rc1"
+        "estandar": "0.10.0",
+        "cli": "0.10.0rc1"
       },
       "archivos": [
         {
           "destino": ".claude/hooks/verificar_al_terminar.py",
-          "sha256": "a13d0089897b36f3a73023a6d1ea796a1a6da680811581f5464af0102d3e89e4"
+          "sha256": "67bd6c2fde66969490da761c5e053861b8b596915e135c59cf11bcbb0b3c20c5"
         }
       ],
       "claude_settings": {
