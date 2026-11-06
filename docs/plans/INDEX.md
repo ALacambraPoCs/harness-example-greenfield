@@ -13,3 +13,5 @@
 | T-0007 | Adoptar el estándar 0.9.1 con despliegue en Pages y revisor informativo | done | alto | @AlbertoLacambra | — | — | [T-0007-adoptar-0-9.md](completed/T-0007-adoptar-0-9.md) |
 | T-0008 | IVA opcional en total() y en el sitio | done | bajo | @AlbertoLacambra | — | — | [T-0008-iva.md](completed/T-0008-iva.md) |
 | T-0009 | El rollback automático del despliegue se ejecuta tras un fallo de verificación | done | alto | @AlbertoLacambra | — | — | [T-0009-rollback-automatico.md](completed/T-0009-rollback-automatico.md) |
+| T-0010 | Adoptar el estándar 0.10.0 (cierre de la Fase 5) | in_progress | alto | @AlbertoLacambra | — | — | [T-0010-adoptar-0-10.md](active/T-0010-adoptar-0-10.md) |
+| T-0011 | Las pruebas de total() viven en tests/test_total.py | ready | medio | @AlbertoLacambra | — | — | [T-0011-pruebas-por-modulo.md](active/T-0011-pruebas-por-modulo.md) |

@@ -1,7 +1,7 @@
 # harness-example-greenfield
 
 <!-- harness:resumen -->
-Servicio de ejemplo que calcula totales de pedidos. Instancia N1 de ejemplo del Estándar de Harness 0.9.1 (repositorio de pruebas de extremo a extremo).
+Servicio de ejemplo que calcula totales de pedidos. Instancia N1 de ejemplo del Estándar de Harness 0.10.0 (repositorio de pruebas de extremo a extremo).
 
 <!-- harness:comandos -->
 ## Comandos
