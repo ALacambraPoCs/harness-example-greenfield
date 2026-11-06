@@ -2,7 +2,8 @@
 id: T-0010
 title: Adoptar el estándar 0.10.0 (cierre de la Fase 5)
 owner: "@AlbertoLacambra"
-status: in_progress
+status: done
+done_pr: 28
 risk: alto
 created: 2026-11-06
 acceptance:
@@ -40,9 +41,11 @@ El repositorio declara el estándar 0.10.0, que recoge las correcciones del cier
 <!-- harness:progreso -->
 ## Progreso
 - 2026-11-06 — workflows a `cli-v0.10.0-rc.1`, `settings.json` alineado con la plantilla 0.10.0 y componentes sincronizados — Claude a nombre de @AlbertoLacambra
+- 2026-11-06 — cerrada en el PR #28 — @AlbertoLacambra
 
 <!-- harness:decisiones -->
 ## Decisiones
 
 <!-- harness:resultado -->
 ## Resultado
+Repositorio adoptado al estándar 0.10.0 (C-1 a C-7): harness check --strict en N1 sin errores ni avisos y AC2 al día. La medición C-8 se hizo en T-0011 (PR #27); no queda nada pendiente.
