@@ -2,7 +2,8 @@
 id: T-0011
 title: Las pruebas de total() viven en tests/test_total.py
 owner: "@AlbertoLacambra"
-status: ready
+status: done
+done_pr: 27
 risk: medio
 created: 2026-11-06
 acceptance:
@@ -33,9 +34,11 @@ Cada módulo tiene su archivo de pruebas con su nombre (`test_total.py` para `to
 
 <!-- harness:progreso -->
 ## Progreso
+- 2026-11-06 — cerrada en el PR #27 — @AlbertoLacambra
 
 <!-- harness:decisiones -->
 ## Decisiones
 
 <!-- harness:resultado -->
 ## Resultado
+Renombrado tests/test_app.py a tests/test_total.py con git mv, sin cambiar las pruebas. check y AC1/AC2 en verde. Pendiente: nada; tests/test_sitio.py sigue como está (fuera de alcance).
