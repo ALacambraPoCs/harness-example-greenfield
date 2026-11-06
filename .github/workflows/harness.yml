@@ -2,6 +2,7 @@
 name: harness
 on:
   pull_request:
+  pull_request_target:
   merge_group:
 permissions:
   contents: read

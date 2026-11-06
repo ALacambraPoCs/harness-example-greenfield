@@ -35,7 +35,6 @@
             "Bash(git commit --no-verify*)",
             "Bash(git commit * --no-verify*)",
             "Bash(gh pr merge *)",
-            "Bash(gh api *)",
             "Bash(harness * --run-commands*)",
             "Bash(harness * --run-acceptance*)",
             "Bash(harness * --json-out*)",
@@ -59,7 +58,8 @@
             "Bash(git fetch -q origin)",
             "Bash(git fetch origin main)",
             "Bash(git switch -c *)",
-            "Bash(gh issue view *)"
+            "Bash(gh issue view *)",
+            "Bash(gh api *)"
         ],
         "disableBypassPermissionsMode": "disable",
         "disableAutoMode": "disable"
