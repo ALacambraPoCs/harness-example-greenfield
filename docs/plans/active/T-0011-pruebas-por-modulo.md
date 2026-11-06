@@ -2,7 +2,7 @@
 id: T-0011
 title: Las pruebas de total() viven en tests/test_total.py
 owner: "@AlbertoLacambra"
-status: ready
+status: in_progress
 risk: medio
 created: 2026-11-06
 acceptance:
